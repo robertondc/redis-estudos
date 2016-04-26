@@ -1,0 +1,100 @@
+HGET "resultado:24-05-2015:megasena" "numeros"
+HMSET "resultado:25-05-2015:megasena" "numeros" "1,2,3,4" "ganhadores" "21"
+HGET "resultado:25-05-2015:megasena"
+HGET "resultado:25-05-2015:megasena" "ganhadores"
+HGET "resultado:25-05-2015:megasena" "numeros"
+HMSET "resultado:24-05-2015:megasena" "numeros" "1,2,3" "ganhadores" "24"
+HGET "resultado:24-05-2015:megasena" "numeros"
+HGET "resultado:24-05-2015:megasena" "ganhadores"
+HGETALL "resultado:24-05-2015:megasena"
+HGETALL "resultado:*-2015:megasena" 
+HGETALL "resultado:24-05-2015:megasena"
+HGETALL "resultado:25-05-2015:megasena"
+HMSET "sessao:usuario:1675" "nome" "roberto" "total_de_produtos" "3"
+HGET "sessao:usuario:1675"
+HGET "sessao:usuario:1675" "nome"
+HGETALL "sessao:usuario:1675"
+HGETALL "sessao:usuario:1675" "total_de_produtos"
+hget "sessao:usuario:1675" "total_de_produtos"
+HGET "sessao:usuario:1675" "nome"
+EXPIRES "sessao:usuario:1675" 10
+EXPIRE "sessao:usuario:1675" 10
+TTL "sessao:usuario:1675" 10
+TTL "sessao:usuario:1675" 
+HGET "sessao:usuario:1675" "nome"
+HMSET "sessao:usuario:1675" "nome" "roberto" "total_de_produtos" "3"
+EXPIRE "sessao:usuario:1675"
+EXPIRE "sessao:usuario:1675" 10
+TTL "sessao:usuario:1675"
+HGET "sessao:usuario:1675" "nome"
+HMSET "sessao:usuario:1675" "nome" "roberto" "total_de_produtos" "3"
+EXPIRE "sessao:usuario:1675" 10
+HGET "sessao:usuario:1675" "nome"
+keys *
+HMSET "sessao:usuario:1675" "nome" "roberto" "total_de_produtos" "3"
+keys *
+EXPIRE "sessao:usuario:1675" 5
+keys *
+keys sessao*
+HMSET "sessao:usuario:1675" "nome" "roberto" "total_de_produtos" "3"
+keys sessao*
+EXPIRE "sessao:usuario:1675" 5
+keys sessao*
+ttl sessao*
+ttl sessao
+exit
+SET pagina:/contato:25-05-2015 1
+SET pagina:/contato:25-05-2015 2
+GET pagina:/contato:25-05-2015 2
+GET pagina:/contato:25-05-2015
+INCR pagina:/contato:25-05-2015
+GETR pagina:/contato:25-05-2015
+GET pagina:/contato:25-05-2015
+INCR pagina:/contato:25-05-2015
+DECR pagina:/contato:25-05-2015
+INCR pagina:/contato:25-05-2015
+DECR pagina:/contato:25-05-2015
+INCR compras:25-05-2015 10
+INCR compras:25-05-2015 
+INCRBY compras:25-05-2015 10
+GETY compras:25-05-2015 
+GET compras:25-05-2015 
+INCR compras:25-05-2015 5
+INCRBY compras:25-05-2015 5
+INCRBYFLOAT compras:25-05-2015 10.
+INCRBY compras:25-05-2015 5.1
+INCRBYFLOAT compras:25-05-2015 5.1
+INCRBYFLOAT compras:25-05-2015 0.2
+INCRBYFLOAT compras:25-05-2015 0.7
+GETcompras:25-05-2015 
+GET compras:25-05-2015 
+keys *25-05-2015
+GETs *25-05-2015
+GET *25-05-2015
+kGETs *25-05-2015
+SETBIT acesso:25-05-2015 15 1
+SETBIT acesso:25-05-2015 32 1
+SETBIT acesso:25-05-2015 46 1
+SETBIT acesso:25-05-2015 11 1
+GETBIT acesso:25-05-2015 15
+GETBIT acesso:25-05-2015 46
+GETBIT acesso:25-05-2015 99
+BITCOUNT  acesso:25-05-2015
+BITCOUNT acesso:25-05-2015
+BITCOUNT acesso:25-05-2016
+SETBIT acesso:26-05-2015 15 1
+SETBIT acesso:26-05-2015 32 1
+BITOP AND acesso:25-e-26-05-2015 acesso:25-05-2015 acesso:26-05-2015
+BICOUNT acesso:25-e-26-05-2015
+BITCOUNT acesso:25-e-26-05-2015
+GETBIT acesso:25-05-2015 15
+GETBIT acesso:25-05-2015 46
+GETBIT acesso:25-e-26-05-2015 15
+GETBIT acesso:25-e-26-05-2015 32
+GETBIT acesso:25-e-26-05-2015 46
+BITOP OR acesso:25-ou-26-05-2015 acesso:25-05-2015 acesso:26-05-2015
+BITCOUNT acesso:25-ou-26-05-2015
+GETBIT acesso:25-ou-26-05-2015 32
+GETBIT acesso:25-ou-26-05-2015 46
+GETBIT acesso:25-ou-26-05-2015 101
+quit
