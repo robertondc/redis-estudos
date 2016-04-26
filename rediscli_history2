@@ -1,0 +1,100 @@
+hgetall jogador:*
+hgetall jogador:1
+hgetall jogador:2
+hget jogador:1 
+hget jogador:1 nome
+hget jogador:1 pontos
+hget jogador:2 pontos
+hget jogador:2 nome
+HINCRBY jogador:1 pontos 10
+HINCRBY JOGADOR:1 pontos 10
+hget jogador:1
+hgetall jogador:1
+hgetall JOGADOR:1
+ZADD pontuacoes 50076 guilherme
+ZADD pontuacoes 65543 carlos
+ZADD pontuacoes 33786 daniela
+ZADD pontuacoes 8754 paulo
+type pontuacoes
+ZCARD pontuacoes
+ZRANGE pontuacoes 0 3
+ZREVRANGE pontuacoes 0 3
+ZADD pontuacoes 50076 guilherme
+ZADD pontuacoes 65543 carlos
+ZADD pontuacoes 33786 daniela
+ZADD pontuacoes 8754 paulo
+type pontuacoes
+ZCARD pontuacoes
+ZGETALL pontuacoes
+ZRANGE pontuacoes 0 3
+ZREVRANGE pontuacoes 0 3
+HGETALL jogador:1
+ZREVRANGE pontuacoes 0 3
+ZVRANGE pontuacoes 0 3 WITHSCORES
+ZINVRANGE pontuacoes 0 3 WITHSCORES
+ZREVRANGE pontuacoes 0 3 WITHSCORES
+ZRANGE pontuacoes 0 3 WITHSCORES
+ZRANGE pontuacoes 0 -1 WITHSCORES
+ZRANGE pontuacoes 0 2 WITHSCORES
+ZRANGE pontuacoes 0 -1 WITHSCORES
+ZRANGE pontuacoes -2 -1 WITHSCORES
+ZREVRANGE pontuacoes 0 -1 WITHSCORES
+ZREVRANGE pontuacoes -3 -1 WITHSCORES
+ZREVRANGE pontuacoes -3 -2 WITHSCORES
+ZREVRANGE pontuacoes -2 -1 WITHSCORES
+ZREVRANGE pontuacoes 0 -1 WITHSCORES
+ZREVRANGE pontuacoes 0 3 WITHSCORES
+ZREVRANGE pontuacoes 0 3 
+ZSCORE pontuacoes carlos
+ZREVRANGE pontuacoes 0 3 WITHSCORES
+ZSCORE pontuacoes daniela
+ZRANK pontuacoes carlos
+ZREVRANK pontuacoes carlos
+ZREVRANK pontuacoes daniela
+ZREAVRANK pontuacoes paulo
+ZREVRANK pontuacoes paulo
+ZREVRANK pontuacoes joao
+ZREVRANGE pontuacoes
+ZREVRANGE pontuacoes 0 3
+ZREVRANGE pontuacoes carlos
+ZREVRANK pontuacoes carlos
+ZINCRBY pontuacoes paulo 100000
+ZINCRBY pontuacoes 100000 paulo
+ZREVRANGE pontuacoes 0 3
+ZSOCRE pontuacoes paulo
+zscore pontuacoes paulo
+zrank pontuacoes paulo
+zrevrank pontuacoes paulo
+del pontuacoes
+zadd pontuacoes 50000 55
+zadd pontuacoes 30000 35
+zadd pontuacoes 300000 65
+zrange pontuacoes 0 -1
+zrevrange pontuacoes 0 -1
+zadd 100000 10
+zadd pontuacoes 100000 10
+zrange pontuacos 0 -1
+zrange pontuacoes 0 -1
+zrevrange pontuacoes 0 -1
+ZRANGE pontuacoes 0 -1
+DEL pontuacoes
+ZADD pontuacoes 50076 guilherme
+ZADD pontuacoes 8764 paulo
+ZINCRBY pontuacoes 50000 guilherme
+ZSCORE pontuacoes guilherme
+ZSCORE pontuacoes paulo
+ZRANK pontuacoes guilherme
+ZREVRANK pontuacoes guilherme
+DEL pontuacoes
+ZADD pontuacoes 55 1000
+ZADD pontuacoes 35 2000
+ZADD pontuacoes 65 500
+ZRANGE pontuacoes 0 -1
+ZRANGE pontuacoes 0 -1 WITHSCORES
+del pontuacoes
+ZADD pontuacoes 1000 55 
+ZADD pontuacoes 2000 35
+ZADD pontuacoes 500 65
+ZRANGE pontuacoes 0 -1
+ZRANGE pontuacoes 0 -1 WITHSCORES
+quit
